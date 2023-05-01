@@ -37,10 +37,15 @@ input#purpose {
   color: #1f1f1f;
 }
 
+#header2 {
+  margin-right: 6%;
+  margin-left: 6%;
+}
+
 #explanation {
   padding: 20px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 8%;
+  margin-right: 8%;
   color: #1f1f1f;
 }
 
