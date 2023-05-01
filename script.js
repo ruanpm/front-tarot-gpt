@@ -80,6 +80,13 @@ const tarotCards = [
 ];
 
 async function generateReading() {
+  const response = await fetch('https://back-tarot-gpt.vercel.app/test');
+  const data = await response.json(); // Assuming the API returns a JSON object with card meanings and explanation text
+  console.log(data);
+  showHeader2(true);
+}
+
+async function test() {
   showSpinner(true);
 
   const generateButton = document.getElementById("generateButton");
