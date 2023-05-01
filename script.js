@@ -106,7 +106,7 @@ async function generateReading() {
 
 
   // Send GET request to the backend API
-  const response = await fetch(`https://back-tarot-gpt.vercel.app/reading?cards=${JSON.stringify(selectedCards)}&purpose=${encodeURIComponent(purpose)}`);
+  const response = await fetch(`https://back-tarot-e7ul09ljv-ruanpm.vercel.app/reading?cards=${JSON.stringify(selectedCards)}&purpose=${encodeURIComponent(purpose)}`);
   const data = await response.json(); // Assuming the API returns a JSON object with card meanings and explanation text
 
   for (let i = 0; i < selectedCards.length; i++) {
