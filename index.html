@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Card Reader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tarot Card Reader</h1>
+    <label for="purpose">For what purpose are you taking the cards?</label>
+    <input type="text" id="purpose" name="purpose" placeholder="Enter your purpose (optional)">
+    <button id="generateButton" onclick="generateReading()">Generate Tarot Card Reading</button>
+    <div id="spinner" class="loading-spinner" style="display:none;"></div>
+    <div id="reading"></div>
+    <h2 id="header2" style="display: none">What your cards mean toghether about your purpose:</h2>
+    <div id="explanation"></div>
+    <script src="script.js"></script>
+</body>
+</html>
