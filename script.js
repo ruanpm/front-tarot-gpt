@@ -79,14 +79,13 @@ const tarotCards = [
   {id: 78, name: "King of Pentacles", url: "1/1c/Pents14"}
 ];
 
-async function generateReading() {
+async function test() {
   const response = await fetch('https://back-tarot-gpt.vercel.app/test');
   const data = await response.json(); // Assuming the API returns a JSON object with card meanings and explanation text
   console.log(data);
-  showHeader2(true);
 }
 
-async function test() {
+async function generateReading() {
   showSpinner(true);
 
   const generateButton = document.getElementById("generateButton");
